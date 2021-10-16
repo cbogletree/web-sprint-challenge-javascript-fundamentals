@@ -170,10 +170,10 @@ CuboidMaker.prototype.volume = function(){
   console.log(`${this.length} * ${this.width} * ${this.height}`);
 }
 
-var cuboidMarker = [];
-for (var i = 1; i <= 100; i++) {
-  cuboidMarker.push(new CuboidMaker(i, i, i));
-}
+// var cuboidMarker = [];
+// for (var i = 1; i <= 100; i++) {
+//   cuboidMarker.push(new CuboidMaker(i, i, i));
+// }
  
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
@@ -190,15 +190,19 @@ for (var i = 1; i <= 100; i++) {
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker 🐴🐴🐴
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
-
+const cuboid = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 
 
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid.volume()); // 100
+console.log(cuboid.surfaceArea()); // 130
  
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
